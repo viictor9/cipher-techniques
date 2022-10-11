@@ -1,0 +1,8 @@
+import pyaes
+aes=pyaes.AESModeOfOperationCTR(b'DESCRYPTDESCRYPT')
+plaintext=input("Enter text:")
+ct=aes.encrypt(plaintext)
+print(ct)
+aes=pyaes.AESModeOfOperationCTR(b'DESCRYPTDESCRYPT')
+plaintext=aes.decrypt(ct)
+print(plaintext)
